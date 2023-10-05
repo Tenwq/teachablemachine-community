@@ -115,7 +115,8 @@ const parseModelOptions = (options?: ModelOptions) => {
 
             return [
                 // tslint:disable-next-line:max-line-length        
-                `https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_${alphaString}_${IMAGE_SIZE}/model.json`,
+                // `https://storage.googleapis.com/tfjs-models/tfjs/mobilenet_v1_${alphaString}_${IMAGE_SIZE}/model.json`,
+                'https://agi-assets.oss-cn-beijing.aliyuncs.com/models/mobilenet_v1_1.0_224.json',
                 DEFAULT_TRAINING_LAYER_V1
             ];
         }
@@ -126,7 +127,8 @@ const parseModelOptions = (options?: ModelOptions) => {
             console.log(`Loading mobilenet ${options.version} and alpha ${options.alpha}`);
             return [
                 // tslint:disable-next-line:max-line-length        
-                `https://storage.googleapis.com/teachable-machine-models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_${options.alpha.toFixed(2)}_${IMAGE_SIZE}_no_top/model.json`,
+                // `https://storage.googleapis.com/teachable-machine-models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_${options.alpha.toFixed(2)}_${IMAGE_SIZE}_no_top/model.json`,
+                'https://agi-assets.oss-cn-beijing.aliyuncs.com/models/mobilenet_v2_weights_tf_dim_ordering_tf_kernels_0.35_224_no_top.json',
                 DEFAULT_TRAINING_LAYER_V2
             ];
         } else {
